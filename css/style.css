@@ -1,0 +1,94 @@
+/**
+ * file: style.css
+ * purpose: effects ...
+ **/
+
+body {
+    animation-name: example;
+    animation-duration: 2s;
+    background-image: url(../images/red-bg.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-color: #063F5F;
+}
+
+.container{
+    max-width: 1000px;
+    background-color: #0677B9;
+    filter:drop-shadow(-2px 4px 20px);
+    margin: 10%;  
+    height: 500px;
+    overflow: scroll;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding: 10%;
+
+}
+
+@keyframes rotate{
+    25%{transform: rotate(280deg); background-color: red;}
+    50%{transform: scale(2,3); background-color: greenyellow;}
+    75%{transform: rotate(900deg); background-color: purple;}
+    100%{transform: scale(0, 0, 0,)}
+}
+
+@keyframes guy{
+    0%{margin-left: -5%;}
+    50%{margin-left: 65%;}
+    100%{margin-left: -5%;}
+}
+@keyframes example {
+    from{
+        background-color: white;
+        opacity: 0;
+    }
+    to{
+    background-color: #063F5F;
+    opacity: 1;
+    }
+}
+
+@keyframes slide-from-left{
+    from{
+        margin-left: -9000;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 2%;
+}
+
+p{
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.img-general{
+    animation-name: slide-from-left;
+    animation-duration: 1s;
+    width: 60%;
+}
+
+.general-article {
+    text-align: center;
+}
+
+#1st {
+	width: 10rem;
+}
+
+.dumb-guy{
+    width: 50%;
+    position: absolute;
+    animation-name: guy;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-top: -50%;
+
+}
