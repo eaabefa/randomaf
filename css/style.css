@@ -84,7 +84,7 @@ p{
 }
 
 .dumb-guy{
-    width: 50%;
+    width: 20%;
     position: absolute;
     animation-name: guy;
     animation-duration: 2s;
